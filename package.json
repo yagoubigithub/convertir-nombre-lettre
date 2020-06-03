@@ -8,5 +8,13 @@
   },
   "author": "yagoubi abdelkader",
   "license": "MIT",
-  "repository": "yagoubigithub/convertir-nombre-chiffre"
+  "repository": "yagoubigithub/convertir-nombre-chiffre",
+  "keywords": [
+    "javascript",
+    "francais",
+    "convertir chiffre en lettre",
+    "chiffre",
+    "lettre",
+    "convertir"
+  ]
 }
