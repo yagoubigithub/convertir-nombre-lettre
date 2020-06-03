@@ -1,25 +1,25 @@
 
 
 
-[![NPM](https://img.shields.io/npm/v/convertir-nombre-chiffre.svg)](https://www.npmjs.com/package/convertir-nombre-chiffre) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/convertir-nombre-chiffre.svg)](https://www.npmjs.com/package/convertir-nombre-lettre) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
-# convertir-nombre-chiffre
+# convertir-nombre-lettre
 >Permet de convertir des nombres(chiffres) en leur équivalent en lettre (ex: 1=un). Respecte l'accord prescrit par la langue française.
 
 ## Install
 
 ```bash
-npm install --save convertir-nombre-chiffre
+npm install --save convertir-nombre-lettre
 ```
 
 ## Usage
 
 ```js
 
-import { NumberToLetter } from 'convertir-nombre-chiffre';
+import { NumberToLetter } from 'convertir-nombre-lettre';
 // OR
-const { NumberToLetter } = require("convertir-nombre-chiffre");
+const { NumberToLetter } = require("convertir-nombre-lettre");
 
 console.log(NumberToLetter(4194945))
 
