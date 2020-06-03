@@ -1,14 +1,11 @@
 {
   "name": "convertir-nombre-lettre",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Permet de convertir des nombres(chiffres) en leur équivalent en lettre (ex: 1=un). Respecte l'accord prescrit par la langue française. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "yagoubi abdelkader",
-  "license": "MIT",
-  "repository": "yagoubigithub/convertir-nombre-chiffre",
   "keywords": [
     "javascript",
     "francais",
@@ -16,5 +13,9 @@
     "chiffre",
     "lettre",
     "convertir"
-  ]
+  ],
+  "author": "yagoubi abdelkader",
+  "license": "MIT",
+  "repository": "yagoubigithub/convertir-nombre-chiffre"
+ 
 }
