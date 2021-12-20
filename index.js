@@ -13,7 +13,7 @@ _________________________________________________________________________	*
 */
 
 function Unite( nombre ){
-	var unite;
+	let unite;
 	switch( nombre ){
 		case 0: unite = "zéro";		break;
 		case 1: unite = "un";		break;
@@ -30,6 +30,7 @@ function Unite( nombre ){
 }//-----------------------------------------------------------------------
 
 function Dizaine( nombre ){
+	let dizaine;
 	switch( nombre ){
 		case 10: dizaine = "dix"; break;
 		case 11: dizaine = "onze"; break;
@@ -54,9 +55,9 @@ function Dizaine( nombre ){
 }//-----------------------------------------------------------------------
 
 function NumberToLetter( nombre ){
-	var i, j, n, quotient, reste, nb ;
-	var ch
-	var numberToLetter='';
+	let i, j, n, quotient, reste, nb ;
+	let ch
+	let numberToLetter='';
 	//__________________________________
 	
 	if(  nombre.toString().replace( / /gi, "" ).length > 15  )	return "dépassement de capacité";
