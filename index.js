@@ -176,6 +176,29 @@ function NumberToLetter( nombre ){
 	 
 	 return numberToLetter;
 }
+
+// MoneyToLetter(12.05, 'euro') => douze euros et 5 centimes
+function MoneyToLetter(nombre, devise) {
+    let parts = `${nombre}`.split('.');
+
+    let integerpart = parts[0];
+    let integerpartstring = NumberToLetter(integerpart);
+
+    let virgulepartstring = '';
+    if (parts.length > 1) {
+        let virgulepart = parts[1];
+        // convert to cents : 0,5 => 0,50
+        if (virgulepart > 0 && virgulepart < 10)
+            virgulepart = `${virgulepart * 10}`;
+        // remove sub cents : 0,5123 => 0,51
+        virgulepart = Math.round(virgulepart * 100) / 100;
+        virgulepartstring = NumberToLetter(virgulepart);
+    }
+
+    return `${integerpartstring} ${devise}${integerpart <= 1 ? '' : 's'}${virgulepartstring ? ` et ${virgulepartstring} centimes` : ''}`;
+}
+
+exoirts.MoneyToLetter = MoneyToLetter;
 exports.NumberToLetter = NumberToLetter;
 exports.Dizaine = Dizaine;
 exports.Unite =Unite;
