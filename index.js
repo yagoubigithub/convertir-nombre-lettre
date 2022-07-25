@@ -198,7 +198,7 @@ function MoneyToLetter(nombre, devise) {
     return `${integerpartstring} ${devise}${integerpart <= 1 ? '' : 's'}${virgulepartstring ? ` et ${virgulepartstring} centimes` : ''}`;
 }
 
-exoirts.MoneyToLetter = MoneyToLetter;
+exports.MoneyToLetter = MoneyToLetter;
 exports.NumberToLetter = NumberToLetter;
 exports.Dizaine = Dizaine;
 exports.Unite =Unite;
